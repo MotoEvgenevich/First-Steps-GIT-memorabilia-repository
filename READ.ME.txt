@@ -9,3 +9,31 @@
 5. Делаем commit через консоль перед тем как лить на git hub.
 				- $git add READ.ME.txt 
 				- $ git commit -m "add READ.ME file"
+6. Добавляем Удаленный репозиторий:
+				- $git remote add quest-final https://github.com/MotoEvgenevich/quest-final.git
+7. Проверяем список удаленных репозиториев:
+				- $git remote -v
+8. Заливаем две ветки на GitHub:
+				- $git checkout main (переключились на ветку main)
+				- $git push quest-final main (залили ветку main на удаленный репозиторий)
+				- $git checkout feature-add-readme
+				- $git push quest-final feature-add-readme
+9. Создаем через интерфейс GitHub новую ветку feature-cat-image
+10. Скачиваем ее себе на локальный репозиторий:
+				- $git checkout main (переключемся на ветку main потому что ветвление feature-cat-image создавали от ветки main)
+				- $git fetch quest-final (выкачиваем изменения из удаленного репозитория наша ветка с котом)
+11. Переключаемся на Кото-ветку и добавляем изображение с котиком:
+				- $git checkout feature-cat-image
+				- $git add cat.jpg
+				- $git commit -m "add cat image"
+12. Заливаем изображение на GitHub:
+				- $git push quest-final feature-cat-image
+13. Локальное слияние ветки main с веткой feature-add-readme:
+				- $git checkout main
+				- $git merge feature-add-readme
+14. Заливаем ветку main на сервер после слияния:
+				- $git push quest-final main
+15. слияем ветки через GitHub main <-- feature-cat-image
+16. скачиваем с GitHub main после слияния:
+				- $git fetch quest-final
+17. 
