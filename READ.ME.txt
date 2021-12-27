@@ -1,0 +1,11 @@
+1. Создаю локальный репозиторий: 
+				- git bash here
+				- $git init
+2. Переименовываю ветку master на main:
+				- $git branch --move master main
+3.Создаем новую ветку feature-add-readme и переключаемся на нее:
+				- $git checkput -b feature-add-readme
+4. Закидуем файл READ.ME с описанием тестового проекта в папку.
+5. Делаем commit через консоль перед тем как лить на git hub.
+				- $git add READ.ME.txt 
+				- $ git commit -m "add READ.ME file"
